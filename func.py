@@ -27,8 +27,8 @@ def main():
     new_score = score(goalstring, new_string)
 
     while new_score < 1:
-        if new_score >= best:
-            print(new_string)
+        if new_score > best:
+            print(new_string, new_string)
             best = new_score
         new_string = generate_one(28)
         new_score = score(goalstring, new_string)
