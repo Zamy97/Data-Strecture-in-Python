@@ -3,3 +3,4 @@ my_list.append(False)
 print(my_list)
 
 my_list.insert(2,4.5)
+print(my_list)
