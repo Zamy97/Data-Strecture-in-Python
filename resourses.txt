@@ -1,0 +1,2 @@
+# Little big about Big o (Helpful links)
+https://stackoverflow.com/questions/33536706/big-o-notation-in-python
