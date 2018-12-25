@@ -23,11 +23,13 @@ import time
 # print(sum_of_n2(100000000000))
 
 
-def sum_of_n3(n):
-    start_time = time.time()
-    sum_number = (n*(n+1))/2
-    end_time = time.time()
-    return sum_number, end_time-start_time
+# def sum_of_n3(n):
+#     start_time = time.time()
+#     sum_number = (n*(n+1))/2
+#     end_time = time.time()
+#     return sum_number, end_time-start_time
+#
+#
+# print(sum_of_n3(900))
 
-
-print(sum_of_n3(900))
+## Write two Python functions to find the minimum number in a list. The first function should compare each number to every other number on the list. O(n2). The second function should be linear O(n)
