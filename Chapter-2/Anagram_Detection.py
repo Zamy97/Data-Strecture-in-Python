@@ -32,35 +32,58 @@
 
 # Second Solution by soring and comparing
 
-def anagram_solution2(string1, string2):
-    """
-    Checks the letters in lists to see if it exists in both lists and returns true.
-
-    """
-
-    # Converts the given string into a list
-    a_list1 = list(string1)
-    a_list2 = list(string2)
-
-    # sort the list alphabatically
-    a_list1.sort()
-    a_list2.sort()
-
-    position = 0
-    matches = True
-
-    while position < len(string1) and matches:
-        if a_list1[position] == a_list2[position]:
-            position = position + 1
-        else:
-            matches = False
-
-    return matches
-
-print(anagram_solution2('abcdejhfre','edcbajh'))
+# def anagram_solution2(string1, string2):
+#     """
+#     Checks the letters in lists to see if it exists in both lists and returns true.
+#
+#     """
+#
+#     # Converts the given string into a list
+#     a_list1 = list(string1)
+#     a_list2 = list(string2)
+#
+#     # sort the list alphabatically
+#     a_list1.sort()
+#     a_list2.sort()
+#
+#     position = 0
+#     matches = True
+#
+#     while position < len(string1) and matches:
+#         if a_list1[position] == a_list2[position]:
+#             position = position + 1
+#         else:
+#             matches = False
+#
+#     return matches
+#
+# print(anagram_solution2('abcdejhfre','edcbajh'))
 
 # Third solution using count and compare
 
+def anagramSolution4(string1,string2):
+    count1 = [0]*26
+    count2 = [0]*26
+
+    for i in range(len(string1)):
+        position = ord(string1[i])-ord('a')
+        count1[position] = count1[position] + 1
+
+    for i in range(len(string2)):
+        position = ord(string2[i])-ord('a')
+        count2[position] = count2[position] + 1
+
+    j = 0
+    stillOK = True
+    while j<26 and stillOK:
+        if count1[j]==count2[j]:
+            j = j + 1
+        else:
+            stillOK = False
+
+    return stillOK
+
+print(anagramSolution4('apple','pleap'))
 # a_word = "aktar"
 # a_word_to_list = list(a_word)
 # a_word_to_list.sort()
