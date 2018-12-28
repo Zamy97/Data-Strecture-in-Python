@@ -1,4 +1,6 @@
 ## Write two Python functions to find the minimum number in a list. The first function should compare each number to every other number on the list. O(n2). The second function should be linear O(n)
+import time
+from random import randrange
 
 def find_min_value(a_list):
     overall_min = a_list[0]
@@ -12,3 +14,6 @@ def find_min_value(a_list):
     return overall_min
 
 print(find_min_value([2,5,1,7,9,9,5,2,1,9,0,3,3,-9]))
+
+
+for list_size in range(1000,10001, 1000)
