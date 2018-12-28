@@ -33,9 +33,16 @@
 # Second Solution by soring and comparing
 
 def anagram_solution2(string1, string2):
+    """
+    Checks the letters in lists to see if it exists in both lists and returns true.
+
+    """
+
+    # Converts the given string into a list
     a_list1 = list(string1)
     a_list2 = list(string2)
 
+    # sort the list alphabatically
     a_list1.sort()
     a_list2.sort()
 
@@ -50,8 +57,9 @@ def anagram_solution2(string1, string2):
 
     return matches
 
-print(anagram_solution2('abcde','edcba'))
+print(anagram_solution2('abcdejhfre','edcbajh'))
 
+# Third solution using count and compare
 
 # a_word = "aktar"
 # a_word_to_list = list(a_word)
