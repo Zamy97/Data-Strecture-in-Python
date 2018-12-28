@@ -1,4 +1,10 @@
-def anagram_solution(string1, string2):
+# First Solution (Checking off)
+
+def anagram_solution1(string1, string2):
+    """
+    This function checls every position in string2 to see if the chacarecter from string1 exist in string 2.
+
+    """
     a_list = list(string2)
 
     position1 = 0
@@ -22,4 +28,10 @@ def anagram_solution(string1, string2):
 
     return still_ok
 
-print(anagram_solution('Aktar', 'dcba'))
+print(anagram_solution1('world', 'dwlro'))
+
+# Second Solution by soring and comparing
+
+def anagram_solution2(string1, string2):
+    a_list1 = list(string1)
+    a_list2 = list(string2)
