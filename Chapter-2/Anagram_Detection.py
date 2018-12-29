@@ -30,6 +30,7 @@ def anagram_solution1(string1, string2):
 
 print(anagram_solution1('world', 'dwlro'))
 
+
 # Second Solution by soring and comparing
 
 def anagram_solution2(string1, string2):
@@ -58,6 +59,7 @@ def anagram_solution2(string1, string2):
     return matches
 
 print(anagram_solution2('abcdejhfre','edcbajh'))
+
 
 # Third solution using count and compare
 
