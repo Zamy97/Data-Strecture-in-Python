@@ -16,6 +16,7 @@
 
 
 # Creating a list of numbers from a range using list comprehension
-def test():
+def test3():
     list_3 = [i for i in range(1000)]
     return list_3
+print(test3())
