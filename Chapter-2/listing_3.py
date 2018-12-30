@@ -28,7 +28,7 @@ def test4():
 
 #Testing the time for each of these function to run to create the list using timeit method
 t1 = timeit.Timer("test1()", "from __main__ import test1")
-print("Cancatinating takes ", t1.timeit(number=1000), "miliseconds") # Takes about 1.333 miliseconds
+print("Cancatinating takes ", t1.timeit(number=1000), "miliseconds.") # Takes about 1.333 miliseconds
 
 t2 = timeit.Timer("test2()", "from __main__ import test2")
 print("Appending takes ", t2.timeit(number=1000), "miliseconds")
