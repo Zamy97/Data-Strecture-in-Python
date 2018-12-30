@@ -31,10 +31,10 @@ t1 = timeit.Timer("test1()", "from __main__ import test1")
 print("Cancatinating takes ", t1.timeit(number=1000), "miliseconds.") # Takes about 1.333 miliseconds
 
 t2 = timeit.Timer("test2()", "from __main__ import test2")
-print("Appending takes ", t2.timeit(number=1000), "miliseconds")
+print("Appending takes ", t2.timeit(number=1000), "miliseconds.")
 
 t3 = timeit.Timer("test3()", "from __main__ import test3")
-print("Comprehension takes ", t3.timeit(number=1000), "miliseconds")
+print("Comprehension takes ", t3.timeit(number=1000), "miliseconds.")
 
 t4 = timeit.Timer("test4()", "from __main__ import test4")
-print("List range takes ", t4.timeit(number=1000), "miliseconds")
+print("List range takes ", t4.timeit(number=1000), "miliseconds.")
