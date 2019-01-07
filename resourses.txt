@@ -1,5 +1,10 @@
-# Little big about Big o (Helpful links)
+# Little big about Big o from Stackoverflow (Helpful links)
 https://stackoverflow.com/questions/33536706/big-o-notation-in-python
 
 # Problem Solving in python book solution
 https://github.com/ErikRHanson/Problem-Solving-with-Algorithms-and-Data-Structures-Using-Python/tree/master/chap02_analysis
+
+# Videos on Big o
+1. https://www.youtube.com/watch?v=V6mKVRU1evU
+2. https://www.youtube.com/watch?v=D6xkbGLQesk
+3. 
