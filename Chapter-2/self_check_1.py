@@ -40,7 +40,7 @@ for list_size in range(1000,10001, 1000):
     end_time = time.time()
     print("Size: %d time: %f" % (list_size, end_time-start_time))
 
-# Checks the speed of the second approach (O(n)). Doesn't take that long to execute.
+# Checks the speed of the second approach (O(n)). Doesn't take that long to execute. One of the fastest out of all of them
 for list_size in range(1000,10001, 1000):
     a_list = [randrange(100000) for x in range(list_size)]
     start_time = time.time()
