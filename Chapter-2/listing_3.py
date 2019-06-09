@@ -1,4 +1,4 @@
-import timeitHelp me
+import timeitHelp
 # Creates a list of numbers by concatenation
 def test1():
     list_1 = []
