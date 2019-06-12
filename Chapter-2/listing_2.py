@@ -31,3 +31,9 @@ print(min_number([5,4,-9,2,7]))
 print(min_number([-9,5,1,4,9]))
 
 # Linear Solution
+def find_min(some_list):
+    min_so_far = some_list[0]
+    for i in some_list:
+        if i < min_so_far:
+            min_so_far = i
+        return min_so_far

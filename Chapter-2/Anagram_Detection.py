@@ -61,6 +61,7 @@ def anagram_solution2(string1, string2):
 print(anagram_solution2('abcdejhfre','edcbajh'))
 
 
+"""****Didn't quite get this one****"""
 # Third solution using count and compare
 
 def anagramSolution4(string1,string2):

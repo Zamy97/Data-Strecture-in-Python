@@ -3,7 +3,6 @@ x = list(range(2000000))
 
 pop_start= timeit.Timer("x.pop(0)", "from __main__ import x")
 
-
 pop_end = timeit.Timer("x.pop()", "from __main__ import x")
 
 print("         pop(0)            pop()")
