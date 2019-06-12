@@ -12,13 +12,22 @@
 # d = 33
 
 ## self check
-some_list = list(range(9))
+import time
+from random import randrange
+
+#n^2 solution
+
 def min_number(some_list):
-    overall_min = some_list[0]
+    # overall_min = some_list[0]
     for a_number in some_list:
         is_smallest = True
         for j in some_list:
-            if i > j:
+            if a_number > j:
                 is_smallest = False
-        return a_number
-min_number(some_list)
+        if is_smallest:
+            overall_min = a_number
+    return overall_min
+print(min_number([5,4,-9,2,7]))
+print(min_number([-9,5,1,4,9]))
+
+# Linear Solution
