@@ -12,3 +12,4 @@ for i in range(1000000, 10000001, 1000000):
     x = list(range(i))
     pz=pop_start.timeit(number = 1000)
     print("%15.5f, %15.5f" %(pz, pt))
+fariha zamaaaaaannnnnnnn loves zamaaaaaannnnnnnn <3
