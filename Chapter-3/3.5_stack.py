@@ -24,28 +24,30 @@ class Stack():
         return len(self.items)
 
 
-
 ###################### Different implementation of stack #######################
 
-class Stack:
-    def __init__(self):
-        self.items = []
+# class Stack:
+#     def __init__(self):
+#         self.items = []
+#
+#     def isEmpty(self):
+#         return self.items == []
+#
+#     def push(self, item):
+#         self.items.insert(0,tiem)
+#
+#     def pop(self):
+#         return self.items.pop(0)
+#
+#     def peeks(self):
+#         return self.items[0]
+#
+#     def size(self):
+#         return len(self.items)
 
-    def isEmpty(self):
-        return self.items == []
 
-    def push(self, item):
-        self.items.insert(0,tiem)
-
-    def pop(self):
-        return self.items.pop(0)
-
-    def peeks(self):
-        return self.items[0]
-
-    def size(self):
-        return len(self.items)
 #################### Testing the Stack Class ####################
+
 
 
 example_stack = Stack()
@@ -61,3 +63,6 @@ example_stack.push(8.4)
 print(example_stack.pop())
 print(example_stack.pop())
 print(example_stack.size())
+
+######################## The third exercise question ###################
+def reverse_string(my_string):
