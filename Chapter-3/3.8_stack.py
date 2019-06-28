@@ -26,6 +26,7 @@ class Stack():
 
 #### Divide by two algoriths to convert a decimial number to a binary number
 def divide_by_2(desimal_num):
+    """Convert the decimial number to binary number and return the binary numbers"""
     reminder_stack = Stack()
 
     while desimal_num > 0:
@@ -37,4 +38,4 @@ def divide_by_2(desimal_num):
     while not reminder_stack.isEmpty():
         binary_string = binary_string + str(reminder_stack.pop())
     return binary_string
-print(divide_by_2(42))
+print(divide_by_2(43))
