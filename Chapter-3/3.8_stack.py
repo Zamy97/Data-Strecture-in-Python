@@ -25,17 +25,37 @@ class Stack():
 
 
 #### Divide by two algoriths to convert a decimial number to a binary number
-def divide_by_2(desimal_num):
-    """Convert the decimial number to binary number and return the binary numbers"""
+# def divide_by_2(desimal_num):
+#     """Convert the decimial number to binary number and return the binary numbers"""
+#     reminder_stack = Stack()
+#
+#     while desimal_num > 0:
+#         remainder = desimal_num % 2
+#         reminder_stack.push(remainder)
+#         desimal_num = desimal_num // 2
+#
+#     binary_string = ''
+#     while not reminder_stack.isEmpty():
+#         binary_string = binary_string + str(reminder_stack.pop())
+#     return binary_string
+# print(divide_by_2(43))
+
+
+####### Base converter to binary number
+def base_converter(desimal_num, base):
+    digits = "0123456789ABCDEF"
+
     reminder_stack = Stack()
 
     while desimal_num > 0:
-        remainder = desimal_num % 2
+        remainder = desimal_num % base
         reminder_stack.push(remainder)
-        desimal_num = desimal_num // 2
+        desimal_num = desimal_num // base
 
-    binary_string = ''
+    binary_string = ""
     while not reminder_stack.isEmpty():
-        binary_string = binary_string + str(reminder_stack.pop())
+        binary_string = binary_string + digits[reminder_stack.pop()]
     return binary_string
-print(divide_by_2(43))
+
+print(base_converter(25,2))
+print(base_converter(25,16))
