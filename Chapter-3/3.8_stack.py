@@ -58,4 +58,4 @@ def base_converter(desimal_num, base):
     return binary_string
 
 print(base_converter(25,2))
-print(base_converter(25,16))
+print(base_converter(26,26))
