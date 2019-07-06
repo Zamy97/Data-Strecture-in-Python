@@ -59,5 +59,3 @@ def base_converter(desimal_num, base):
 
 print(base_converter(25,2))
 print(base_converter(26,26))
-
-Base conversin
